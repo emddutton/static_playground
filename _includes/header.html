@@ -1,8 +1,10 @@
+{% capture location %}{{ page.url | split:'/' }}{% endcapture %} 
+<header class="main-header" role="banner">
 <header class="site-header">
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <a class="site-title" href="{{ site.baseurl }}/"><img src="/images/smokeybanditlogo.jpg" alt={{ site.title }}</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -14,9 +16,14 @@
       </a>
 
       <div class="trigger">
+        <!-- Compare the page title to the URL -->
+        {% assign current = page.title | downcase %}
+
         {% for my_page in site.pages %}
           {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+
+          
+          <a  {% if location == current %} class="page-link" {% else %} class="page-link" {% endif %} href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
           {% endif %}
         {% endfor %}
       </div>
