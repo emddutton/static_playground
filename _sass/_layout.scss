@@ -2,7 +2,7 @@
  * Site header
  */
 .site-header {
-    border-bottom: 1px solid $grey-color-light;
+    border-bottom: 5px solid $brand-color;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -28,14 +28,21 @@
 
 .site-nav {
     float: right;
-    line-height: 56px;
+    transform-style: preserve-3d;
 
     .menu-icon {
         display: none;
     }
+    .trigger {
+        position: relative;
+        top: 50%;
+        transform: translateY(100%);
+    }
 
     .page-link {
         color: $text-color;
+        font-size: 1.25em;
+        font-weight: 700;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the last one
@@ -170,7 +177,7 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    padding: 0 0;
 }
 
 .page-heading {

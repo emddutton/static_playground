@@ -21,9 +21,8 @@
 
         {% for my_page in site.pages %}
           {% if my_page.title %}
-
-          
-          <a  {% if location == current %} class="page-link" {% else %} class="page-link" {% endif %} href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+   
+          <a  {% if page.url == current %} class="page-link-current" {% else %} class="page-link" {% endif %} href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
           {% endif %}
         {% endfor %}
       </div>

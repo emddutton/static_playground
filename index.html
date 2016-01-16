@@ -1,23 +1,19 @@
 ---
-layout: default
+layout: wrapperfree
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  <div class="intro">
+      <img src="/images/barrels.jpg">
+      <div class="introtext">
+        We're a gypsy brewery that does whatever suits our dual-sided and indecisive nature but specializes in Belgians. You never know where our curiousity will take us next.
+      </div>
+    </div>
+  <div class="wrapper">
+      <div class="lineup">
+        <div class="arrow"><img src="/images/arrow.png"></div>
+        <div class="bottles"><img src="http://placehold.it/300x400"></div>
+        <span>This is our lineup right now but we're just getting started. Stay tuned for more!</span>
+      </div>
+  </div>
 </div>
