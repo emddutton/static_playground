@@ -29,7 +29,7 @@
 	.arrow {
 		position: absolute;
 		top: 0;
-		left: 200px;
+		left: 230px;
 		img {
 			width: 225px;
 		}
@@ -37,6 +37,7 @@
 	.bottles {
 		float: left;
 		img {
+		border: 5px solid black;
 		width: 300px;
 		}
 	}

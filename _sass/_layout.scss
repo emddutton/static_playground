@@ -23,6 +23,7 @@
     }
     img {
         width: 225px;
+        margin: .2em 0;
     }
 }
 
@@ -36,7 +37,7 @@
     .trigger {
         position: relative;
         top: 50%;
-        transform: translateY(100%);
+        transform: translateY(25%);
     }
 
     .page-link {
@@ -44,6 +45,9 @@
         font-size: 1.25em;
         font-weight: 700;
         line-height: $base-line-height;
+        &:hover {
+            color: $brand-color;
+        }
 
         &-current {
             text-decoration: underline;
@@ -51,6 +55,9 @@
             font-size: 1.25em;
             font-weight: 700;
             line-height: $base-line-height;
+                &:hover {
+                color: $brand-color;
+            }
                 &:not(:last-child) {
                 margin-right: 20px;
             }
