@@ -45,6 +45,17 @@
         font-weight: 700;
         line-height: $base-line-height;
 
+        &-current {
+            text-decoration: underline;
+            color: $text-color;
+            font-size: 1.25em;
+            font-weight: 700;
+            line-height: $base-line-height;
+                &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
             margin-right: 20px;
@@ -176,8 +187,11 @@
 /**
  * Page content
  */
+.home .page-content {
+    padding: 0;
+}
 .page-content {
-    padding: 0 0;
+    padding: 30px 0;
 }
 
 .page-heading {

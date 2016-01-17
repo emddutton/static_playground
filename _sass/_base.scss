@@ -98,7 +98,7 @@ a {
         color: darken($brand-color, 15%);
     }
 
-    &:hover, &-current {
+    &:hover {
         color: $text-color;
         text-decoration: underline;
     }

@@ -16,13 +16,13 @@
       </a>
 
       <div class="trigger">
-        <!-- Compare the page title to the URL -->
-        {% assign current = page.title | downcase %}
-
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-   
-          <a  {% if page.url == current %} class="page-link-current" {% else %} class="page-link" {% endif %} href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+        {% for page in site.pages %}
+        <!-- compare page title to url -->
+          {% assign current = page.class | downcase %}
+          {% if page.title %}
+           <a {% if location == current %} class="page-link-current" 
+              {% else %} class="page-link" 
+              {% endif %} href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           {% endif %}
         {% endfor %}
       </div>
