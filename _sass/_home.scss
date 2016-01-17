@@ -27,8 +27,8 @@
 	position: relative;
 	.arrow {
 		position: absolute;
-		top: 25px;
-		left: 150px;
+		top: 0;
+		left: 200px;
 		img {
 			width: 225px;
 		}
@@ -46,6 +46,7 @@
 		font-size: 1.8em;
 		position: relative;
         top: 50%;
+        margin-top: .5em;
         transform: translateY(100%);
 	}
 }
