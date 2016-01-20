@@ -52,3 +52,21 @@
         transform: translateY(100%);
 	}
 }
+
+@include media-query($on-laptop) {
+	.intro {
+	.introtext {
+		position: relative;
+		padding: 20px 20px;
+		font-size: 2em;
+	}
+	}
+}
+
+@include media-query($on-palm) {
+	.intro {
+	.introtext {
+		font-size: 1.5em;	
+	}
+	}
+}
