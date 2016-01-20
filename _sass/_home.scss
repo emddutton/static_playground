@@ -55,18 +55,38 @@
 
 @include media-query($on-laptop) {
 	.intro {
-	.introtext {
-		position: relative;
-		padding: 20px 20px;
-		font-size: 2em;
+		.introtext {
+			position: relative;
+			padding: 20px 20px;
+			font-size: 2em;
+		}
 	}
+	.lineup {
+
 	}
 }
 
 @include media-query($on-palm) {
 	.intro {
-	.introtext {
-		font-size: 1.5em;	
+		.introtext {
+			font-size: 1.5em;	
+		}
 	}
+	.lineup {
+		.arrow {
+			display: none;
+		}
+		.bottles {
+			float: none;
+			clear: both;
+			text-align: center;
+		}
+		span {
+			float: none;
+			clear: both;
+			width: 100%;
+			text-align: center;
+			margin: .5em auto;
+		}
 	}
 }
