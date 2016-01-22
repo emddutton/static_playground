@@ -71,7 +71,6 @@
 
     @include media-query($on-palm) {
         position: absolute;
-        min-height: 200px;
         top: 9px;
         right: $spacing-unit / 2;
         background-color: $background-color;
@@ -106,6 +105,7 @@
 
         &:hover .trigger {
             display: block;
+            min-height: 200px;
             padding-bottom: 5px;
         }
 
