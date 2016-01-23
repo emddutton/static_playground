@@ -38,7 +38,7 @@
     .trigger {
         position: relative;
         top: 50%;
-        transform: translateY(25%);
+        transform: translateY(200%);
     }
 
     .page-link {
@@ -47,7 +47,7 @@
         font-weight: 700;
         line-height: $base-line-height;
         &:hover {
-            color: $brand-color;
+            color: #fff;
         }
 
         &-current {
