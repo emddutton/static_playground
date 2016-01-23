@@ -14,6 +14,8 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
+    background: $background-color url("/images/starrysky.jpg");
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.2);
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
     background-color: $background-color;
