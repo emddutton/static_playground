@@ -38,11 +38,11 @@
 		border-bottom-color: $brand-color;
 		}
 	}
+	a.site-title {
+	display: none;
+	}
 }
 
-.trigger a.site-title {
-	display: none;
-}
 
 /* --------------------------
   Media Queries
