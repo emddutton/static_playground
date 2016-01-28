@@ -1,4 +1,6 @@
 footer {
+	border-top: 5px solid $brand-color;
+    padding: $spacing-unit 0;
 	.contactinfo {
 		float: left;
 		p {
@@ -44,6 +46,9 @@ footer {
 				    width: 80%;
 				    padding: 8px 0;
 				    text-indent: 2%;
+				    font-family: "Lato";
+					font-size: 12px;
+					line-height: 12px;
 				}
 				::-webkit-input-placeholder {
 					font-family: "Lato";
@@ -53,6 +58,9 @@ footer {
 			}
 			div.mce_inline_error {
 			    display: none !important;
+			}
+			div.response {
+				padding: 0;
 			}
 			.clear {
 				display: inline;

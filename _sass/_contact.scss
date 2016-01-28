@@ -1,0 +1,35 @@
+.contactus {
+	form#contactform {
+	    margin: 3em 0 0;
+	}
+	input[type="text"], input[type="email"], 
+	textarea {
+		display: block;
+		width: 100%;
+		background: transparent;
+		margin-bottom: 2em;
+		padding: 1em .5em .2em;
+	    border: 0;
+	    border-bottom: 1px solid gray;
+	    color: $text-color;
+	    font-size: 16px;
+	    font-family: "Lato";
+	    line-height: 16px;
+	    ::-webkit-input-placeholder {
+					font-family: "Lato";
+					font-size: 14px;
+					line-height: 14px;
+				}
+	}
+	input[type="submit"] {
+		-webkit-appearance: none;
+	    font-size: 16px;
+	    font-family: "Lato";
+	    line-height: 16px;
+	    width: 100px;
+	    height: 30px;
+	    border: none;
+	    color: white;
+	    text-transform: uppercase;
+	}
+}

@@ -5,9 +5,11 @@
 }
 
 .site-header {
-	/*padding-top: 2em;*/
-	/*background: $background-color url("/images/starrysky.jpg");
-	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);*/
+	border-bottom: 5px solid $brand-color;
+    min-height: 56px;
+
+    // Positioning context for the mobile navigation icon
+    position: relative;
 }
 
 .site-title {
@@ -15,6 +17,8 @@
 	img {
 		/*padding-top: .6em;*/
 		width: 300px;
+		margin: .2em 0;
+        border: 2px solid $brand-color;
 	}
 }
 
