@@ -21,7 +21,7 @@ footer {
 	#mc_embed_signup form {
     display: block;
     position: relative;
-    text-align: left;
+    text-align: center;
     padding: 10px 0 10px 0;
 	}
 
@@ -56,6 +56,11 @@ footer {
 			}
 			.clear {
 				display: inline;
+			}
+			.button {
+				border-radius: 0;
+				background-color: #999;
+				font-family: "Lato";
 			}
 		}
 }

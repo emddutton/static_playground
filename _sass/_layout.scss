@@ -22,7 +22,7 @@
         color: $grey-color-dark;
     }
     img {
-        width: 225px;
+        /*width: 225px;*/
         margin: .2em 0;
         border: 2px solid $brand-color;
     }
@@ -56,70 +56,14 @@
             font-size: 1.25em;
             font-weight: 700;
             line-height: $base-line-height;
-                &:hover {
-                color: $brand-color;
-            }
-                &:not(:last-child) {
+                /*&:not(:last-child) {
                 margin-right: 20px;
-            }
+            }*/
         }
 
-        // Gaps between nav items, but not on the last one
-        &:not(:last-child) {
-            /*margin-right: 15px;*/
-        }
     }
 
-   /* @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: $spacing-unit / 2;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-        z-index: 2;
-*/
-        /*.menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }*/
-
-        /*.trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            min-height: 200px;
-            padding-bottom: 5px;
-        }*/
-
-        /*.page-link {
-            display: block;
-            padding: 5px 10px;
-
-            &:not(:last-child) {
-                margin-right: 0;
-            }
-            margin-left: 20px;
-        }*/
-    /*}*/
+ 
 }
 
 
@@ -197,11 +141,16 @@
 /**
  * Page content
  */
-.home .page-content {
+/*.home .page-content {
     padding: 0;
 }
 .page-content {
     padding: 30px 0;
+}*/
+
+article.post {
+    padding: 3em 1em;
+    background: rgba(0,0,0,.2);
 }
 
 .page-heading {
