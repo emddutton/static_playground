@@ -32,5 +32,9 @@
 	    color: $text-color;
 	    background-color: $grey-color;
 	    text-transform: uppercase;
+	    &:hover {
+	    	color: $grey-color;
+	    	background-color: $text-color;
+	    }
 	}
 }

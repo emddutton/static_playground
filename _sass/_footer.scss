@@ -69,6 +69,11 @@ footer {
 				border-radius: 0;
 				background-color: $grey-color;
 				font-family: "Lato";
+				text-transform: uppercase;
+				&:hover {
+					color: $grey-color;
+					background-color: $text-color;
+				}
 			}
 		}
 }
