@@ -5,7 +5,7 @@
 	input[type="text"], input[type="email"], 
 	textarea {
 		display: block;
-		width: 100%;
+		width: 98%;
 		background: transparent;
 		margin-bottom: 2em;
 		padding: 1em .5em .2em;
@@ -29,7 +29,8 @@
 	    width: 100px;
 	    height: 30px;
 	    border: none;
-	    color: white;
+	    color: $text-color;
+	    background-color: $grey-color;
 	    text-transform: uppercase;
 	}
 }
