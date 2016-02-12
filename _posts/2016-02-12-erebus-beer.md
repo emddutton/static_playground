@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Erebus Imperial Stout"
-date:   2016-01-11 18:52:05 -0700
+date:   2016-02-12 18:52:05 -0700
 categories: beer
 ---
 
