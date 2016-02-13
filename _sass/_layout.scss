@@ -168,6 +168,21 @@ article.post {
         width: 100%;
     }
 
+    ul {
+        margin: 0;
+    }
+
+    li {
+        list-style: none;
+        a {
+            font-size: 1.5em;
+            text-decoration: underline;
+        }
+        p {
+            font-style: italic;
+        }
+    }
+
     h2 {
         font-size: 32px;
 
