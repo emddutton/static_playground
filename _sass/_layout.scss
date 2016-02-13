@@ -220,3 +220,16 @@ article.post {
         }
     }
 }
+
+.wheretobuy {
+    h3 {
+        margin: 1em 0 0;
+    }
+    li {
+        font-size: 1.5em;
+        a {
+            font-size: inherit;
+            text-decoration: none;
+        }
+    }
+}
