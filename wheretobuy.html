@@ -84,7 +84,7 @@ $.each(collection, function(index,value) {
     console.log(filteredstore, filteredcity, filteredurl);
     // $(".store ul").append('<li><a href=' + filteredurl + '>' +
     //      filteredstore  + '</li></a>' + '<hr>');
-    $(".store ul").append($("<li>", {}).append($("<a>", { href: filteredurl }).text(filteredstore).append($("<hr>"))));
+    $(".store ul").append($("<li>", {}).append($("<a>", { href: filteredurl }).text(filteredstore)).append($("<hr>")));
 		$(".city ul").append("<li>" + filteredcity + "</li>" + "<hr>");
 });
 
