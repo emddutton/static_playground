@@ -43,10 +43,10 @@ permalink: /wheretobuy/
 			<li>Harvest Wine and Spirits</li>
 			</ul> -->
 
-			<div class="importedlist">
-				<div class="store"><ul></ul></div>
-				<div class="city"><ul></ul></div>
-			</div>
+<div class="importedlist">
+	<div class="store"><ul></ul></div>
+	<div class="city"><ul></ul></div>
+</div>
 
 <script>
 $(document).ready(function() {
@@ -66,14 +66,14 @@ $(document).ready(function() {
 			});
 
 var nondupList = [],
-				collection = [];
+		collection = [];
 
 $.each(listing, function(index, value) {
     		var store = value.gsx$company.$t;
     if ($.inArray(store, nondupList) === -1) {
         nondupList.push(store);
         collection.push(value);
-    }
+    	}
     });
 
 $.each(collection, function(index,value) {
@@ -82,13 +82,10 @@ $.each(collection, function(index,value) {
     var filteredcity = collection[index].gsx$city.$t;
     var filteredurl = collection[index].gsx$url.$t;
     console.log(filteredstore, filteredcity, filteredurl);
-    // $(".store ul").append('<li><a href=' + filteredurl + '>' +
-    //      filteredstore  + '</li></a>' + '<hr>');
+    
     $(".store ul").append($("<li>", {}).append($("<a>", { href: filteredurl }).text(filteredstore)).append($("<hr>")));
 		$(".city ul").append("<li>" + filteredcity + "</li>" + "<hr>");
-});
-
-  
+		}); 
 	});
 });
 </script>	
