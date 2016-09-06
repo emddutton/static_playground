@@ -20,16 +20,33 @@
 	    text-align: center;
 	    }
 }
+.wbc {
+	overflow: hidden;
+  clear: both;
+  margin: 0 -9999rem;
+  padding: 50px 9999rem;
+  background: rgba(255,255,255,0.5);
+  .award {
+  	img {
+  		height: 450px;
+    	float: right;
+    	border: 5px solid black;
+  	}
+  }
+}
 
 .lineup {
+	clear: both;
 	transform-style: preserve-3d;
-	margin: 3em auto 2em;
 	position: relative;
 	overflow: hidden;
+	margin: 0 -9999rem;
+  padding: 50px 9999rem;
+  background: rgba(0,0,0,0.5);
 	.arrow {
 		position: absolute;
-		top: 0;
-		left: 325px;
+		top: 15%;
+		left: 50%;
 		img {
 			width: 225px;
 		}

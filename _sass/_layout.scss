@@ -247,4 +247,9 @@ article.post {
         
         }
     }
+    @include media-query($on-ipad) {
+     .city {
+         display: none;
+     }
+ }
 }
