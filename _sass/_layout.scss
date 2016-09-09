@@ -151,8 +151,9 @@ article.post {
 }
 
 .post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
+    font-family: 'Merriweather';
+    font-size: 45px;
+    text-align: center;
     line-height: 1;
 
     @include media-query($on-laptop) {
@@ -210,13 +211,20 @@ article.post {
 
 .ourbeers {
     h3 {
-        margin: 1em 0 0;
+        margin: 1.5em 0 0;
+        text-align: center;
+    }
+    .deets {
+        text-align: center;
+        border-top: 1px white solid;
+        margin-bottom: 1em;
     }
     li {
-        margin: .5em 0;
+        margin: 1.5em 0;
     span {
-        font-size: 1.25em;
-        text-decoration: underline;
+        font-family: 'Merriweather';
+        font-size: 2em;
+        display: block;
         }
     }
 }
@@ -241,18 +249,12 @@ article.post {
         hr {
             border-style: dotted;
         }
+        li {
+            line-height: 2em;
+        }
         li a {
-        
-        text-decoration: none;
-        
+            text-decoration: none;
         }
     }
-    @include media-query($on-ipad) {
-    .store {
-        width: 100%;
-    }
-     .city {
-         display: none;
-     }
- }
+    
 }

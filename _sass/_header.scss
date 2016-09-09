@@ -1,99 +1,70 @@
-.main-header,
-.site-nav, .main-header .wrapper {
-	display: flex;
-	flex-direction: column;
+.site-header,
+.site-nav, .site-header .wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
-.main-header {
-	/*padding-top: 2em;*/
-/*	background: $background url("../../images/starrysky.jpg");
-*/	/*box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);*/
+.site-header {
+  border-bottom: 5px solid $brand-color;
+    min-height: 56px;
+
+    // Positioning context for the mobile navigation icon
+    position: relative;
 }
 
 .site-title {
-	align-self: center;
-	img {
-		width: 225px;
-        margin: .2em 0;
-	}
+  align-self: center;
+  img {
+    padding-top: .5em;
+    width: 300px;
+  }
 }
 
 .site-nav {
-	a {
-	display: block;
-	text-decoration: none;
-	font-size: 1.75em;
-	font-weight: 600;
-	text-align: center;
-	padding: .6em;
-	font-family: 'Lato';
-	border-bottom: 1px solid #ebecec;
-		&:hover {
-		color: #FFF;
-		/*border-bottom-color: $red;*/
-		}
-	}
-	.page-link {
-        color: $text-color;
-        font-size: 1.25em;
-        font-weight: 700;
-        line-height: $base-line-height;
-        &:hover {
-            color: $brand-color;
-        }
-
-        &-current {
-            text-decoration: underline;
-            color: $text-color;
-            font-size: 1.25em;
-            font-weight: 700;
-            line-height: $base-line-height;
-                &:hover {
-                color: $brand-color;
-            }
-                &:not(:last-child) {
-                margin-right: 20px;
-            }
-        }
-
-        // Gaps between nav items, but not on the last one
-        &:not(:last-child) {
-            margin-right: 20px;
-        }
+  margin-top: 1.5em;
+  li {
+    list-style: none;
+  }
+  a {
+  display: block;
+  text-decoration: none;
+  color: $text-color;
+  font-size: 1.75em;
+  font-weight: 600;
+  text-align: center;
+  padding: .6em;
+  font-family: 'Lato';
+  border-bottom: 1px solid #ebecec;
+    &:hover {
+    color: #FFF;
+    border-bottom-color: $brand-color;
     }
+  }
+  a.site-title {
+  display: none;
+  }
 }
+
 
 /* --------------------------
   Media Queries
 --------------------------- */
 
 @media (min-width: 769px) {
-	.main-header {
-		justify-content: flex-end;
-		border-bottom: 5px solid $brand-color;
-	}
-	.site-title {
-		/*width: 140px;*/
-	}
-	.site-nav {
-		margin-top: 3em;
-		flex-direction: row;
-		justify-content: space-between;
-		a {
-		display: inline-block;
-		border-bottom-color: transparent;
-		}
-		}
-}
-
-@media (min-width: 1025px) {
-	.main-header, .main-header .wrapper {
-		flex-direction: row;
-	}
-	.site-title {
-		margin-right: auto;
-	}
-	.site-nav {
-		align-self: center;
-		}
+  .site-header {
+    justify-content: flex-end;
+    border-bottom: 5px solid $brand-color;
+  }
+  .site-title {
+    /*width: 140px;*/
+  }
+  .site-nav {
+    margin: 2em 0 .5em;
+    flex-direction: row;
+    justify-content: space-between;
+    a {
+      display: inline;
+      border-bottom-color: transparent;
+    }
+    }
 }

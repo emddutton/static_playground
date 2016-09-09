@@ -1,0 +1,16 @@
+---
+layout: page
+title: Latest News	
+class: latestnews
+permalink: /latestnews/
+---		
+
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
