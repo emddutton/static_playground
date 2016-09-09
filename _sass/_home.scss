@@ -8,45 +8,28 @@
 
 	.introtext {
 		position: absolute;
-	    background: rgba(0,0,0,.3);
+	    background: rgba(0,0,0,.5);
 	    max-width: 100%;
 	    bottom: 0;
 	    padding: 20px 100px;
 	    color: #eee;
 	    font-size: 2.8em;
-	    font-family: "Indie Flower";
+	    font-family: $base-font-family-alt;
 	    font-weight: 700;
 	    text-transform: uppercase;
 	    text-align: center;
 	    }
 }
-.wbc {
-	overflow: hidden;
-  clear: both;
-  margin: 0 -9999rem;
-  padding: 50px 9999rem;
-  background: rgba(255,255,255,0.5);
-  .award {
-  	img {
-  		height: 450px;
-    	float: right;
-    	border: 5px solid black;
-  	}
-  }
-}
 
 .lineup {
-	clear: both;
 	transform-style: preserve-3d;
+	margin: 3em auto 2em;
 	position: relative;
-	overflow: hidden;
-	margin: 0 -9999rem;
-  padding: 50px 9999rem;
-  background: rgba(0,0,0,0.5);
+	overflow: auto;
 	.arrow {
 		position: absolute;
-		top: 15%;
-		left: 50%;
+		top: 0;
+		left: 230px;
 		img {
 			width: 225px;
 		}
@@ -55,55 +38,17 @@
 		float: left;
 		img {
 		border: 5px solid black;
-		width: 400px;
+		width: 300px;
 		}
 	}
 	span {
 		float: right;
-		width: 40%;
+		width: 48%;
 		font-family: "Indie Flower";
 		font-size: 1.8em;
 		position: relative;
         top: 50%;
         margin-top: .5em;
         transform: translateY(100%);
-	}
-}
-
-@include media-query($on-laptop) {
-	.intro {
-		.introtext {
-			position: relative;
-			padding: 20px 20px;
-			font-size: 2em;
-		}
-	}
-	.lineup {
-
-	}
-}
-
-@include media-query($on-palm) {
-	.intro {
-		.introtext {
-			font-size: 1.5em;	
-		}
-	}
-	.lineup {
-		.arrow {
-			display: none;
-		}
-		.bottles {
-			float: none;
-			clear: both;
-			text-align: center;
-		}
-		span {
-			float: none;
-			clear: both;
-			width: 100%;
-			text-align: center;
-			margin: .5em auto;
-		}
 	}
 }

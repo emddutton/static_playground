@@ -1,11 +1,11 @@
 .site-header,
 .site-nav, .site-header .wrapper {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .site-header {
-	border-bottom: 5px solid $brand-color;
+  border-bottom: 5px solid $brand-color;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -13,36 +13,36 @@
 }
 
 .site-title {
-	align-self: center;
-	img {
-		padding-top: .5em;
-		width: 300px;
-	}
+  align-self: center;
+  img {
+    padding-top: .5em;
+    width: 300px;
+  }
 }
 
 .site-nav {
-	margin-top: 1.5em;
-	li {
-		list-style: none;
-	}
-	a {
-	display: block;
-	text-decoration: none;
-	color: $text-color;
-	font-size: 1.75em;
-	font-weight: 600;
-	text-align: center;
-	padding: .6em;
-	font-family: 'Lato';
-	border-bottom: 1px solid #ebecec;
-		&:hover {
-		color: #FFF;
-		border-bottom-color: $brand-color;
-		}
-	}
-	a.site-title {
-	display: none;
-	}
+  margin-top: 1.5em;
+  li {
+    list-style: none;
+  }
+  a {
+  display: block;
+  text-decoration: none;
+  color: $text-color;
+  font-size: 1.75em;
+  font-weight: 600;
+  text-align: center;
+  padding: .6em;
+  font-family: 'Lato';
+  border-bottom: 1px solid #ebecec;
+    &:hover {
+    color: #FFF;
+    border-bottom-color: $brand-color;
+    }
+  }
+  a.site-title {
+  display: none;
+  }
 }
 
 
@@ -51,20 +51,20 @@
 --------------------------- */
 
 @media (min-width: 769px) {
-	.site-header {
-		justify-content: flex-end;
-		border-bottom: 5px solid $brand-color;
-	}
-	.site-title {
-		/*width: 140px;*/
-	}
-	.site-nav {
-		margin: 2em 0 .5em;
-		flex-direction: row;
-		justify-content: space-between;
-		a {
-			display: inline;
-			border-bottom-color: transparent;
-		}
-		}
+  .site-header {
+    justify-content: flex-end;
+    border-bottom: 5px solid $brand-color;
+  }
+  .site-title {
+    /*width: 140px;*/
+  }
+  .site-nav {
+    margin: 2em 0 .5em;
+    flex-direction: row;
+    justify-content: space-between;
+    a {
+      display: inline;
+      border-bottom-color: transparent;
+    }
+    }
 }
