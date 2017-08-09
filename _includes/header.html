@@ -16,7 +16,7 @@
       </a> -->
 
       <div class="trigger">
-        {% for page in site.pages %}
+        <!-- {% for page in site.pages %} -->
           {% assign current = page.class | downcase %}
           {% unless page.exclude %}
              {% if page.title %}
@@ -25,7 +25,7 @@
                 {% endif %} href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                 {% endif %}
           {% endunless %}
-      {% endfor %}
+      <!-- {% endfor %} -->
         <!-- compare page title to url -->
           <!-- {% assign current = page.class | downcase %}
           {% if page.title %} -->
