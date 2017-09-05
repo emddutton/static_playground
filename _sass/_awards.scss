@@ -1,0 +1,14 @@
+.awards {
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure {
+    margin-bottom: 0px;
+  }
+  h3.title {
+  margin-top: 30px;
+  }
+  h4.award {
+    color: $accent-color;
+  }
+  h5.beername {
+    font-size: 1.1em;
+  }
+}

@@ -14,7 +14,7 @@
 	    padding: 20px 100px;
 	    color: #eee;
 	    font-size: 2.8em;
-	    font-family: $base-font-family-alt;
+	    font-family: 'Architects Daughter', cursive;
 	    font-weight: 700;
 	    text-transform: uppercase;
 	    text-align: center;
@@ -44,12 +44,79 @@
 	span {
 		float: right;
 		width: 48%;
-		font-family: "Indie Flower";
+		font-family: 'Architects Daughter', cursive;
 		font-size: 1.8em;
 		position: relative;
         top: 50%;
         margin-top: .5em;
         transform: translateY(100%);
+	}
+}
+
+.awards {
+@extend %clearfix;
+padding: 20px 0;
+	.awardspic {
+		padding: 40px 0;
+		float: left;
+		img {
+			max-width: 300px;
+			border: 10px solid $accent-color;
+			-webkit-transform: rotate(-10deg);
+	   	-moz-transform: rotate(-10deg);
+	    -ms-transform: rotate(-10deg);
+	     -o-transform: rotate(-10deg);
+	        transform: rotate(-10deg);
+		}
+	}
+	.awardstext {
+		font-family: 'Architects Daughter', cursive;
+    font-size: 1.5em;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+    float: right;
+    margin: 20px 0 0 20px;
+    span a{
+    	text-decoration: underline;
+    }
+	}
+}
+
+.helpwanted {
+@extend %clearfix;
+box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, .4);
+margin: 0 -99999px;
+padding: 20px 99999px;
+	.jobstext {
+		font-family: 'Architects Daughter', cursive;
+    font-size: 1.5em;
+    color: #000;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+    float: left;
+    margin: 20px 20px 0 0px;
+    span a{
+    	color: #000;
+    	text-decoration: underline;
+    	&:hover {
+    		color: $accent-color;
+    	}
+    }
+	}
+	.jobspic {
+		padding: 40px 0;
+		float: right;
+			img {
+				max-width: 300px;
+				border: 10px solid #000;
+				-webkit-transform: rotate(10deg);
+		   	-moz-transform: rotate(10deg);
+		    -ms-transform: rotate(10deg);
+		     -o-transform: rotate(10deg);
+	        transform: rotate(10deg);
+			}
 	}
 }
 
@@ -64,6 +131,30 @@
 	.lineup {
 
 	}
+}
+
+@include media-query($on-ipad) {
+.awards {
+	text-align: center;
+		.awardspic {
+			float: none;
+		}
+		.awardstext {
+	    width: 100%;
+	    float: none;
+		}
+}
+
+.helpwanted {
+text-align: center;
+	.jobstext {
+    width: 100%;
+    float: none;
+	}
+	.jobspic {
+		float: none;
+	}
+}
 }
 
 @include media-query($on-palm) {

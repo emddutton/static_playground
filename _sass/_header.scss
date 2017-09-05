@@ -5,7 +5,7 @@
 }
 
 .site-header {
-  border-bottom: 5px solid $brand-color;
+  border-bottom: 10px solid $brand-color;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -35,9 +35,12 @@
   padding: .6em;
   font-family: 'Lato';
   border-bottom: 1px solid #ebecec;
+    &:last-of-type {
+      border-bottom: none;
+      }
     &:hover {
-    color: #FFF;
-    border-bottom-color: $brand-color;
+    color: $accent-color;
+    text-decoration: none;
     }
   }
   a.site-title {
@@ -53,7 +56,7 @@
 @media (min-width: 769px) {
   .site-header {
     justify-content: flex-end;
-    border-bottom: 5px solid $brand-color;
+    
   }
   .site-title {
     /*width: 140px;*/
@@ -62,9 +65,13 @@
     margin: 2em 0 .5em;
     flex-direction: row;
     justify-content: space-between;
+
     a {
       display: inline;
       border-bottom-color: transparent;
+      &:last-of-type {
+      border-bottom: none;
+      }
     }
     }
 }
