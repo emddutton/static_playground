@@ -18,16 +18,15 @@
       <div class="trigger">
         
         {% for page in site.pages %}
-        
+        {% unless page.exclude %}
         <!-- compare page title to url -->
           {% assign current = page.class | downcase %}
           {% if page.title %}
-          {% unless page.exclude %}
            <a {% if location == current %} class="page-link-current" 
               {% else %} class="page-link" 
               {% endif %} href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-              {% endunless %}
           {% endif %}
+        {% endunless %}
         {% endfor %}
       </div>
     </nav>
