@@ -13,6 +13,8 @@ description: Brewery and Taproom in Grand Junction, Colorado serving award winni
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://geminibeer.com" # the base hostname & protocol for your site
 
+plugins:
+  - jekyll-seo-tag
 
 # Build settings
 markdown: kramdown
